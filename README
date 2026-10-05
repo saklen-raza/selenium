@@ -1,0 +1,8 @@
+1. Inside selenium-lab, create the calculator folder with index.html and calc.js.
+2. Open calculator/index.html in Chrome and try a few calculations manually.
+3. Create test_calculator.py in calculator folder.
+4. Activate the virtual environment 
+      python3 -m venv .venv ==> source .venv/bin/activate ==> python -m pip install selenium
+         and run python test_calculator.py.
+5. Observe Chrome opening and running every test; note the summary in the terminal.
+6. To see a failing test, change the expected value in test_2_addition to "Result: 21", rerun, note the FAIL and AssertionError, then restore it.

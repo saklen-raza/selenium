@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Calculator</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f4f8; display: flex; justify-content: center; padding-top: 60px; }
+    .calc { background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); width: 360px; }
+    h2 { text-align: center; color: #182848; margin-top: 0; }
+    input { width: 100%; padding: 10px; margin: 8px 0; box-sizing: border-box; font-size: 16px; border: 1px solid #ccc; border-radius: 5px; }
+    .buttons { display: flex; gap: 8px; margin-top: 8px; }
+    button { flex: 1; padding: 12px; font-size: 18px; border: none; border-radius: 5px; background: #4b6cb7; color: #fff; cursor: pointer; }
+    #clear { background: #999; }
+    #result { margin-top: 18px; font-size: 20px; font-weight: bold; text-align: center; min-height: 24px; }
+    .ok { color: green; }
+    .err { color: red; }
+  </style>
+</head>
+<body>
+  <div class="calc">
+    <h2>Simple Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <div class="buttons">
+      <button id="add">+</button>
+      <button id="sub">-</button>
+      <button id="mul">&times;</button>
+      <button id="div">&divide;</button>
+    </div>
+    <div class="buttons"><button id="clear">Clear</button></div>
+    <div id="result"></div>
+  </div>
+  <script src="calc.js"></script>
+</body>
+</html>
